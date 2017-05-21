@@ -1,0 +1,126 @@
+body {
+	background-image: url(../images/background.jpg);
+	margin: auto;
+}
+
+h1 {
+	color: white;
+	font-family: "Press Start 2P", Times, Times New Roman, serif;
+	font-size: 28px;
+}
+
+h2 {
+	color: white;
+	font-family: "Press Start 2P", Times, Times New Roman, serif;
+	font-size: 20px;
+}
+
+p {
+	color: white;
+	font-family: Arial, Times, Times New Roman, serif;
+	font-size: 10px;
+}
+
+.container {
+}
+
+.sections {
+	text-align: center;
+	height: auto;
+	padding: 25%;
+}
+
+
+#headSection {
+	text-align: center;
+	padding: 10px;
+}
+
+.row {
+	padding: 5px;
+}
+
+#mobileHide {
+	display: none;
+	text-align: center;
+	padding: 10px;
+}
+
+#fightSection {
+	text-align: center;
+	padding: 10px;
+}
+
+#fightSection img {
+	width: 100%;
+	height: auto;
+	margin: 3px;
+}
+
+#defendSection {
+	display: none;
+	text-align: center;
+	padding: 10px;
+}
+
+#defendSection img {
+	width: 100%;
+	height: auto;
+	margin: 3px;
+}
+
+#enemySection {
+	display: none;
+	text-align: center;
+	padding: 10px;
+}
+
+#enemySection img {
+	width: 100%;
+	height: auto;
+	margin: 3px;
+}
+
+.imageText {
+	position: absolute;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	bottom: 3px;
+	left: 3px;
+	text-align: center;
+	padding: 2px 0px 0px 0px;
+}
+
+.individualImage {
+	width: 40%;
+	position: relative;
+	margin: 10px;
+	float: left;
+}
+
+#defendSection .individualImage {
+	width: 40%;
+}
+#fightSection .individualImage {
+	width: 40%;
+}
+#enemySection .individualImage {
+	width: 20%;
+}
+
+@media screen and (max-device-width: 480px) {
+	.sections {
+		display: none;
+	}
+
+	#headSection {
+		display: none;
+	}
+
+	#mobileHide {
+		display: inherit;
+		text-align: center;
+		padding: 10px 0px 10px 0px;
+		height: 98vh;
+	}
+}
