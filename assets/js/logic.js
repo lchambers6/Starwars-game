@@ -28,7 +28,7 @@ $(document).ready(function() {
     		bringImages(fightList, "#fightPhoto");
     		if (fightList[0].defend <= 0) {
     			if (enemyList[0].defend <= 0 && deadList.length === 3) {
-					$('#enemyPhoto').html('<h1>You Tie?<br>Both Fighters Died!<br>Press Space to Replay</h1>');
+					$('#enemyPhoto').html('<h1>You Tie?<br>Both Fighters Died!<br>Press  Space or Refresh to Replay</h1>');
 		    		$('#fightPhoto').html('');
 		    		$('#headSection').html('<h1>Star Wars RGP</h1>');
 		    		$('#defendPhoto').html('');
@@ -39,7 +39,7 @@ $(document).ready(function() {
 						}
 					})
 	    		} else {
-	    			$('#enemyPhoto').html('<h1>You Loose!<br>Press Space to Replay</h1>');
+	    			$('#enemyPhoto').html('<h1>You Loose!<br>Press Space or Refresh to Replay</h1>');
 		    		$('#fightPhoto').html('');
 		    		$('#headSection').html('<h1>Star Wars RGP</h1>');
 		    		$('#defendPhoto').html('');
@@ -59,7 +59,7 @@ $(document).ready(function() {
 		    		$('#fightPhoto').html('');
 		    		$('#defendPhoto').html('');
 		    		$('#headSection').html('<h1>Star Wars RGP</h1>');
-		    		$('#enemyPhoto').html('<h1>You Win!<br>Press Space to Replay</h1>');
+		    		$('#enemyPhoto').html('<h1>You Win!<br>Press Space or Refresh to Replay</h1>');
 		    		$(window).keypress(function (e) {
 						if (e.keyCode === 0 || e.keyCode === 32) {
 							e.preventDefault();
