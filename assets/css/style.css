@@ -108,7 +108,7 @@ p {
 	width: 20%;
 }
 
-@media screen and (max-device-width: 480px) {
+/*@media screen and (max-device-width: 480px) {
 	.sections {
 		display: none;
 	}
@@ -123,4 +123,4 @@ p {
 		padding: 10px 0px 10px 0px;
 		height: 98vh;
 	}
-}
+}*/
