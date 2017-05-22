@@ -23,11 +23,13 @@ $(document).ready(function() {
     		$('#defendPhoto').html('');
     		$('#defendPhoto').html('<h2>Enemy</h2>');
     		bringImages(enemyList, "#defendPhoto");
+    		$('#defendPhoto').append('<p>' + enemyList[0].name + '&#39;s attack power: ' + Math.floor(enemyList[0].attack)+ '</p>');
     		$('#fightPhoto').html('');
     		$('#fightPhoto').html('<h2>Fighter</h2>');
     		bringImages(fightList, "#fightPhoto");
+    		$('#fightPhoto').append('<p>' + fightList[0].name + '&#39;s attack power: ' + Math.floor(fightList[0].attack) + '</p>');
     		if (fightList[0].defend <= 0) {
-    			if (enemyList[0].defend <= 0 && deadList.length === 3) {
+    			if (enemyList[0].defend <= 0 && deadList.length === 2) {
 					$('#enemyPhoto').html('<h1>You Tie?<br>Both Fighters Died!<br>Press  Space or Refresh to Replay</h1>');
 		    		$('#fightPhoto').html('');
 		    		$('#headSection').html('<h1>Star Wars RGP</h1>');
@@ -85,6 +87,7 @@ $(document).ready(function() {
 					$('#fightPhoto').html('');
 					$('#fightPhoto').html('<h2>Fighter</h2>');
 					bringImages(fightList, "#fightPhoto");
+					$('#fightPhoto').append('<p>' + fightList[0].name + '&#39;s attack power: ' + Math.floor(fightList[0].attack) + '</p>');
 					defendList.push(ewok, jar, watto);
 					bringImages(defendList, "#enemyPhoto");
 					break;
@@ -93,6 +96,7 @@ $(document).ready(function() {
 					$('#fightPhoto').html('');
 					$('#fightPhoto').html('<h2>Fighter</h2>');
 					bringImages(fightList, "#fightPhoto");
+					$('#fightPhoto').append('<p>' + fightList[0].name + '&#39;s attack power: ' + Math.floor(fightList[0].attack) + '</p>');
 					defendList.push(dexter, jar, watto);
 					bringImages(defendList, "#enemyPhoto");
 					break;
@@ -101,6 +105,7 @@ $(document).ready(function() {
 					$('#fightPhoto').html('');
 					$('#fightPhoto').html('<h2>Fighter</h2>');
 					bringImages(fightList, "#fightPhoto");
+					$('#fightPhoto').append('<p>' + fightList[0].name + '&#39;s attack power: ' + Math.floor(fightList[0].attack) + '</p>');
 					defendList.push(dexter, ewok, watto);
 					bringImages(defendList, "#enemyPhoto");
 					break;		
@@ -109,6 +114,7 @@ $(document).ready(function() {
 					$('#fightPhoto').html('');
 					$('#fightPhoto').html('<h2>Fighter</h2>');
 					bringImages(fightList, "#fightPhoto");
+					$('#fightPhoto').append('<p>' + fightList[0].name + '&#39;s attack power: ' + Math.floor(fightList[0].attack) + '</p>');
 					defendList.push(dexter, ewok, jar);
 					bringImages(defendList, "#enemyPhoto");
 					break;
@@ -125,13 +131,14 @@ $(document).ready(function() {
     		imgDefendName = $(this).attr('src').split('\/');
     		imgDefendName = imgDefendName[imgDefendName.length-1]
     		imgDefendName = imgDefendName.slice(0, -4)
-    		$('#headSection').html('<h1>Star Wars RGP</h1><p><br>Click the image of your fighter to attack!</p>');
+    		$('#headSection').html('<h1>Star Wars RGP</h1><h2><br>Click the image of your fighter to attack!<br>Win by defeating all enemies.</h2>');
 			switch (imgDefendName) { 
 				case 'Dexter Jettser':
 					enemyList.push(dexter);
 					$('#defendPhoto').html('');
 					$('#defendPhoto').html('<h2>Enemy</h2>');
 					bringImages(enemyList, "#defendPhoto");
+					$('#defendPhoto').append('<p>' + enemyList[0].name + '&#39;s attack power: ' + Math.floor(enemyList[0].attack)+ '</p>');
 					defendList = [];
 					defendList.push(ewok, jar, watto);
 					defendList.splice(defendList.indexOf(fightList[0]), 1);
@@ -153,6 +160,7 @@ $(document).ready(function() {
 					$('#defendPhoto').html('');
 					$('#defendPhoto').html('<h2>Enemy</h2>');
 					bringImages(enemyList, "#defendPhoto");
+					$('#defendPhoto').append('<p>' + enemyList[0].name + '&#39;s attack power: ' + Math.floor(enemyList[0].attack)+ '</p>');
 					defendList = [];
 					defendList.push(dexter, jar, watto);
 					defendList.splice(defendList.indexOf(fightList[0]), 1);
@@ -174,6 +182,7 @@ $(document).ready(function() {
 					$('#defendPhoto').html('');
 					$('#defendPhoto').html('<h2>Enemy</h2>');
 					bringImages(enemyList, "#defendPhoto");
+					$('#defendPhoto').append('<p>' + enemyList[0].name + '&#39;s attack power: ' + Math.floor(enemyList[0].attack)+ '</p>');
 					defendList = [];
 					defendList.push(dexter, ewok, watto);
 					defendList.splice(defendList.indexOf(fightList[0]), 1);
@@ -195,6 +204,7 @@ $(document).ready(function() {
 					$('#defendPhoto').html('');
 					$('#defendPhoto').html('<h2>Enemy</h2>');
 					bringImages(enemyList, "#defendPhoto");
+					$('#defendPhoto').append('<p>' + enemyList[0].name + '&#39;s attack power: ' + Math.floor(enemyList[0].attack)+ '</p>');
 					defendList = [];
 					defendList.push(dexter, ewok, jar);
 					defendList.splice(defendList.indexOf(fightList[0]), 1);
