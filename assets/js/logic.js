@@ -41,7 +41,7 @@ $(document).ready(function() {
 						}
 					})
 	    		} else {
-	    			$('#enemyPhoto').html('<h1>You Loose!<br>Press Space or Refresh to Replay</h1>');
+	    			$('#enemyPhoto').html('<h1>You Lose!<br>Press Space or Refresh to Replay</h1>');
 		    		$('#fightPhoto').html('');
 		    		$('#headSection').html('<h1>Star Wars RGP</h1>');
 		    		$('#defendPhoto').html('');
